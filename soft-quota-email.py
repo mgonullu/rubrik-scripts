@@ -1,3 +1,5 @@
+#Written by Mehmet Gonullu
+#version 1.0
 #This code read a capacity report from Rubrik CDM 
 #and shows tenant capacity utilized, and send an email to Global Admin to warn about exceed in utilization
 
@@ -25,7 +27,7 @@ def send_to_admin(x):
     Subject: "Quota Exceeded for"{x}
     To: {receiver}
     From: {sender}
-    This is my first message with Python."""
+    The quota of your tenant has exceeded its limit."""
 
     try:
       # Send your message with credentials specified above
